@@ -10,5 +10,48 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border: 10px solid black;
+    gap: 2px;
+    border-radius: 2%;
+}
+
+.display {
     background-color: gray;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 5.5em;
+    font-weight: initial;
+    margin: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    flex: 1 0 24%;
+    margin: 1px;
+    border-radius: 5%;
+    border: none;
+    font-weight: initial;
+    font-size: 2em;
+    font-family: monospace;
+    color: black;
+}
+
+#zero {
+    flex: 1 0 49%;
 }
