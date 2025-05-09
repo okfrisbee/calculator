@@ -42,7 +42,13 @@ function clickButton() {
 clickButton();
 
 function buttonDelete() {
-    displayValue = displayValue.substring(0, displayValue.length - 1);
+    if (pressedEqual) {
+        displayValue = 0;
+        pressedEqual = false;
+    } else {
+        displayValue = displayValue.substring(0, displayValue.length - 1);
+    }
+    
 }
 
 function clear() {
